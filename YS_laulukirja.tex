@@ -1,4 +1,4 @@
-\documentclass[12pt, twoside]{book}
+\documentclass[6pt, twoside]{book}
 % \documentclass[2pt, twocolumn]{book}
 
 
@@ -210,7 +210,10 @@
 \thispagestyle{empty}
 
 % Logo page, image from pdf with high density rasterisation of an svg
-\includegraphics[page=1, width=\textwidth]{YS_logo}
+\begin{center}
+    \includegraphics[page=1, width=0.8\linewidth]{YS_logo}
+    \Huge{\textbf{Laulukirja}}
+\end{center}
 
 \newpage
 
@@ -227,5 +230,7 @@
 \includechapter{ikivihreat}
 
 \printindex
+
+\includechapter{credits}
 
 \end{document}
