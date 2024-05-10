@@ -1,4 +1,5 @@
 \documentclass[12pt, twoside]{book}
+% \documentclass[2pt, twocolumn]{book}
 
 
 %================================================
@@ -7,7 +8,7 @@
 
 \usepackage[T2A,T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[finnish,swedish,russian]{babel}
+\usepackage[finnish,swedish,english,russian]{babel}
 \usepackage{csquotes}
 
 %================================================
@@ -33,9 +34,9 @@
 \indexsetup{level=\chapter}
 \makeindex[title=Index,columns=1]
 
-%\usepackage{imakeidx}
-%\indexsetup{level=\chapter}
-%\makeindex[title=Index,columns=1,options=-s index.ist]
+% \usepackage{imakeidx}
+% \indexsetup{level=\chapter}
+% \makeindex[title=Index,columns=1,options=-s index.ist]
 
 % \usepackage{pdfpages}
 \usepackage[hidelinks]{hyperref}
@@ -216,5 +217,7 @@
 \thispagestyle{empty}
 
 \includechapter{laulut}
+
+\printindex
 
 \end{document}
