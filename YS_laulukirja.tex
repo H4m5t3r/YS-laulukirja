@@ -1,6 +1,7 @@
-\documentclass[4pt, twoside]{book}
-% \documentclass[2pt, twocolumn]{book}
-
+% \documentclass[1pt, a4paper, twocolumn]{book}
+% \documentclass[0.5pt, twocolumn]{book}
+% \documentclass[a4paper,12pt]{memoir}
+\documentclass[a4paper,twoside]{book}
 
 %================================================
 % Language encodings
@@ -207,6 +208,12 @@
 %=================================================
 \begin{document}
 
+% Set smaller font size globally
+\fontsize{8}{10}\selectfont
+
+% Apply ragged right (left-aligned text)
+\raggedright
+
 \thispagestyle{empty}
 
 % Logo page, image from pdf with high density rasterisation of an svg
@@ -217,20 +224,20 @@
 
 \newpage
 
-\thispagestyle{empty}
+\begin{multicols}{2}
+    \thispagestyle{empty}
 
-% \includechapter{laulut}
+    \includechapter{isanmaalliset_laulut}
 
-\includechapter{isanmaalliset_laulut}
+    \includechapter{snapsilaulut}
 
-\includechapter{snapsilaulut}
+    \includechapter{ys_laulut}
 
-\includechapter{ys_laulut}
+    \includechapter{ikivihreat}
 
-\includechapter{ikivihreat}
+    \printindex
 
-\printindex
-
-\includechapter{credits}
+    \includechapter{credits}
+\end{multicols}
 
 \end{document}
