@@ -221,10 +221,10 @@
 
 \thispagestyle{empty}
 
-% Logo page, image from pdf with high density rasterisation of an svg
+\thispagestyle{empty}
 \begin{center}
-    \includegraphics[page=1, width=0.8\linewidth]{YS_logo}
-    \Huge{\textbf{Laulukirja}}
+	\includegraphics[width=\textwidth]{synttarisitsit_logo_bw.jpeg}
+    \Huge{\textbf{24.5.2024}}
 \end{center}
 
 \newpage
@@ -234,7 +234,7 @@
 \begin{multicols}{2}
     \thispagestyle{empty}
 
-    % \includechapter{isanmaalliset_laulut}
+    \includechapter{isanmaalliset_laulut}
 
     \includechapter{snapsilaulut}
 
@@ -242,7 +242,8 @@
 
 \end{multicols}
 
-\includechapter{muistiinpanoja}
+% For filling empty pages with music sheets.
+% \includechapter{muistiinpanoja}
 
 \begin{multicols}{2}
     
@@ -253,8 +254,10 @@
 \newpage
 
 \thispagestyle{empty}
+
 \begin{center}
-	\includegraphics[width=\textwidth]{synttarisitsit_logo_bw.jpeg}
+    \includegraphics[page=1, width=0.8\linewidth]{YS_logo_vertical}
+    \Huge{\textbf{Ylioppilaskunnan Soittajat}}
 \end{center}
 
 \end{document}
