@@ -42,7 +42,12 @@
 %=============================================================
 \newcommand{\includechapter}[1]{\include{chapters/#1}}
 
-\newcommand{\inputsong}[1]{\input{songs/#1}}
+% \newcommand{\inputsong}[1]{\input{songs/#1}}
+\newcommand{\inputsong}[1]{
+  \refstepcounter{songcounter} % Increment the song counter
+  \noindent\textbf{\normalsize{\thesongcounter.}} % Display the current song number
+  \input{songs/#1} % Input the song file
+}
 
 \newcommand{\inputnotes}[1]{\input{notes/#1}}
 
